@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/TopKoka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_top"
+            android:elevation="10dp"
+            android:stateListAnimator="@null"
+            android:text="Новости Grampus"
+            android:textSize="18dp"
+            android:translationZ="10dp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/BurgerMenu"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:elevation="11dp"
+            android:src="@drawable/burger_menu"
+            android:translationZ="11dp"
+            app:layout_constraintEnd_toEndOf="@id/TopKoka"
+            app:layout_constraintHorizontal_bias="0.05"
+            android:layout_marginTop="12px"
+            app:layout_constraintStart_toStartOf="@id/TopKoka"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/TopKoka"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/post_background"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/post_1_1"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Как сделать сайт быстро, без смс и регистрации"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:gravity="center"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Для этого вполне достаточно сделать несколько вещей:"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="1. Поставить пятёрочку"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="2. Спросить кого-нибудь в грампусе (вам не ответят)"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="3. Поступить в колледж связи"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Каждый день добываем сайты и привлекаем эмитентов из интернета, развивая бизнес наших эмитентов.
+За все время работы получили целенаправленный опыт упорядочения заявок и звонков из интернета по эклектичным сферам.
+Всегда при разработке сайта мы целиком и лживостью оглядываемся в расселение нашего клиента."
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <Button
+            android:id="@+id/burger1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Новости"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/burger2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Подать резюме"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/burger4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Заявка на сайт"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/burger3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="О приложении"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

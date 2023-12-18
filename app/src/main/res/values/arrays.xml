@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="education_levels">
+        <item>Высшее образование</item>
+        <item>Среднее специальное образование</item>
+        <item>Начальное образование</item>
+    </string-array>
+
+    <string-array name="employment_types">
+        <item>Веб-разработчик</item>
+        <item>Менеджер по продажам</item>
+        <item>Маркетолог</item>
+    </string-array>
+
+    <string-array name="schedule_types">
+        <item>Высшее образование</item>
+        <item>Среднее специальное образование</item>
+        <item>Начальное образование</item>
+    </string-array>
+
+</resources>
