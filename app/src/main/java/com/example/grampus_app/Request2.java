@@ -53,7 +53,7 @@ public class Request2 extends AppCompatActivity {
 
         Button sendButton = findViewById(R.id.WorkButton);
 
-        String connectionString = "jdbc:ucanaccess://C:/Users/gamer/Downloads/praktiac.accdb";
+        String connectionString = "jdbc:ucanaccess://C:/Users/KOSTYAVINOGRADOV/Downloads/praktiac.accdb";
 
         sendButton.setOnClickListener(view -> {
             String fio = fioEditText.getText().toString();
