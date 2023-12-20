@@ -53,33 +53,19 @@ public class Request2 extends AppCompatActivity {
 
         Button sendButton = findViewById(R.id.WorkButton);
 
-        String connectionString = "jdbc:ucanaccess://C:/Users/KOSTYAVINOGRADOV/Downloads/praktiac.accdb";
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String fio = fioEditText.getText().toString();
+                String phone = phoneEditText.getText().toString();
+                String email = emailEditText.getText().toString();
+                String description = descriptionEditText.getText().toString();
 
-        sendButton.setOnClickListener(view -> {
-            String fio = fioEditText.getText().toString();
-            String phone = phoneEditText.getText().toString();
-            String email = emailEditText.getText().toString();
-            String description = descriptionEditText.getText().toString();
-
-            String[] nameParts = fio.split(" ");
-            String name = nameParts[0];
-            String surname = nameParts[nameParts.length - 1];
-
-            try {
-                Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-                try (Connection connection = DriverManager.getConnection(connectionString)) {
-                    String query = "INSERT INTO Заказ (Имя, Фамилия, Телефон, Почта, Описание_заказа) VALUES (?, ?, ?, ?, ?)";
-                    try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-                        preparedStatement.setString(1, name);
-                        preparedStatement.setString(2, surname);
-                        preparedStatement.setString(3, phone);
-                        preparedStatement.setString(4, email);
-                        preparedStatement.setString(5, description);
-                        preparedStatement.executeUpdate();
-                    }
+                if (fio.isEmpty() || phone.isEmpty() || email.isEmpty() || description.isEmpty()) {
+                    Toast.makeText(Request2.this, "Пожалуйста, заполните все поля", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(Request2.this, "Заявка успешно подана, мы с Вами свяжемся!", Toast.LENGTH_SHORT).show();
                 }
-            } catch (SQLException | ClassNotFoundException e) {
-                e.printStackTrace();
             }
         });
 

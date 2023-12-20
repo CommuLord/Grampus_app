@@ -61,16 +61,17 @@
             android:padding="25dp">
 
             <TextView
+                android:id="@+id/fioTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Введите Ваше ФИО:" />
 
             <EditText
+                android:id="@+id/fioEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ustom_edittext_background"
-                android:padding="3dp"
-                />
+                android:padding="3dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,7 +84,7 @@
                     android:text="Выберите ваш возраст:" />
 
                 <EditText
-                    android:id="@+id/editTextDate"
+                    android:id="@+id/ageEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/ustom_edittext_background"
@@ -92,22 +93,26 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/phoneTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Введите Ваш телефон:" />
 
             <EditText
+                android:id="@+id/phoneEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ustom_edittext_background"
                 android:padding="3dp" />
 
             <TextView
+                android:id="@+id/emailTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Введите Ваш email:" />
 
             <EditText
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ustom_edittext_background"
@@ -119,14 +124,14 @@
                 android:text="Резюме:" />
 
             <EditText
+                android:id="@+id/descriptionEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
                 android:lines="10"
                 android:gravity="top|start"
                 android:background="@drawable/ustom_edittext_background"
-                android:padding="3dp"
-                />
+                android:padding="3dp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -134,12 +139,13 @@
                 android:text="Выберите вакансию:" />
 
             <Spinner
+                android:id="@+id/vacancySpinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:entries="@array/employment_types" />
 
             <Button
-                android:id="@+id/WorkButton"
+                android:id="@+id/sendButton"
                 android:layout_width="400px"
                 android:layout_height="wrap_content"
                 android:background="@drawable/gradient_button"
@@ -148,8 +154,7 @@
                 android:textSize="18dp"
                 app:backgroundTint="@null"
                 android:layout_gravity="center"
-                android:layout_marginTop="30dp"
-                />
+                android:layout_marginTop="30dp" />
 
         </LinearLayout>
 

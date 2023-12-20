@@ -8,6 +8,7 @@
     </string-array>
 
     <string-array name="employment_types">
+        <item>Выбрать</item>
         <item>Веб-разработчик</item>
         <item>Менеджер по продажам</item>
         <item>Маркетолог</item>
